@@ -30,7 +30,7 @@ int calculate(int n, int x)
         double y = 1;
         for (int i = 0; i <= n - 1; i++)
         {
-            y *= (i * i + i);
+            y *= (i * i + i)+5;
         }
 
         return y;
@@ -42,7 +42,7 @@ int calculate(int n, int x)
             for (int j = 0; j <= n - 1; j++)
                 if (j + i != 0)
                 {
-                    y += x / (i + j);
+                    y += x / (i + j)+5;
                 }
         return y;
 
